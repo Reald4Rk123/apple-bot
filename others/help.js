@@ -15,32 +15,32 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://media.discordapp.net/attachments/861399487233654834/872561176456884224/image0.png `)
-    .setTitle(`**Random Help**`)
+    .setThumbnail(`https://cdn.discordapp.com/attachments/839939556177739810/884322774552821820/apple-bot.png `)
+    .setTitle(`**Apple Bot**`)
     .setDescription(`
-<a:emoji_180:856878164592427028>  **User Commands**
+**|** **User Commands**
 **__invite - support- about - ping - prefix - uptime - tinvites - sug - roleuser - report__**
 
-<a:emoji_102:871813008471507004> **Music Commands**
+**|** **Music Commands**
 **__play - skip - skipto - stop - volume  nowplaying - shuffle - search  - loop - lyrics -radio__**
 
-<a:emoji_11:845102475740577792> **Gif Commands**
+**|** **Gif Commands**
 **__boy - girl - couple - sad - cartoon - anime - neon__**
 
-<a:FBBE600B13DB4F5986B4D0AF89247091:871811080148639794>  **Moderation Commands**
+**|** **Moderation Commands**
 **__ban - unban - setnick - roleadd - roleremove - vkick - setprefix - clear - close - open - senddm__**
 
-<a:kass:872897079305986108> **Game Commands**
+**|** **Game Commands**
 **__kiss - slap - hug - slots__**
 
- <a:emoji_103:871813076964507710> **Links**
- [Support](https://discord.gg/K8SSqweuSH)
- [Invite](https://discord.com/api/oauth2/authorize?client_id=802995353209012234&permissions=8&scope=bot)
+ <a:link:864935879603781633> **Links**
+ [Support](https://discord.gg/u56dbrvHvh)
+ [Invite](https://discord.com/api/oauth2/authorize?client_id=878987721618628628&permissions=8&scope=bot)
  [Website](coming soon)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
-   message.react("<a:emoji_182:860935836240314378>")
+   message.react("✅")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
