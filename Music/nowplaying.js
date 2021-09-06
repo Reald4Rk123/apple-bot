@@ -32,7 +32,7 @@ execute(message) {
     let ms = (Number(minutes)*60+Number(seconds));
     //get thumbnail
     let thumb;
-    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
+    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/860460279555817532/881576569120915476/image2-1-1.jpg";
     else thumb = song.thumbnail.url;
     //define current time
     const seek = (queue.connection.dispatcher.streamTime - queue.connection.dispatcher.pausedTime) / 1000;
