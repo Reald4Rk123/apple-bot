@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login("ODM5OTM5MDE5MzI4NzE2ODcx.YJQ8Kw.t7X8tMGkf6GiypdAJr6PcN8whsk");
+client.login("ODc4OTg3NzIxNjE4NjI4NjI4.YSJLGw.99dLogNn9VNjgbgBkc8hiWxyrMg");
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -330,7 +330,7 @@ Ban.ban();
 
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("861399446008102923");
+  let channel = client.channels.cache.get("839939556177739810");
   let embed = new MessageEmbed().setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -344,7 +344,7 @@ client.on("guildCreate", guild => {
 
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("861399487233654834");
+  let channel = client.channels.cache.get("839939556177739810");
   let embed = new MessageEmbed()
   .setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
@@ -357,7 +357,7 @@ client.on("guildDelete", guild => {
   channel.send(embed);
 });
 
-const channelid = "860205351819411456"    //id channele vc
+const channelid = "877802357465944144"    //id channele vc
 client.on("ready", () => {
     const channel = client.channels.cache.get(channelid);
     if (!channel) return console.error("The channel does not exist!");
@@ -434,7 +434,7 @@ client.on('message',  (message) => {
 .setDescription(`${message.author.username} Hugs ${user.username}!`)
  
 .setImage(hugs[Math.floor(Math.random() * hugs.length)])
-.setFooter('Random Bot ')
+.setFooter('Apple Bot ')
 message.channel.send(embed)
  
         }})
@@ -880,7 +880,7 @@ client.on(`ready`, () => {
         { return member.voice.channel.leave(); }
       });
       
-    client.user.setActivity(` ${PREFIX}help - Random Bot Is here for fun`, { type: "WATCHING"});
+    client.user.setActivity(` ${PREFIX}help - Apple Bot Is here `, { type: "WATCHING"});
     client.user.setActivity(` ${PREFIX}help | Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "WATCHING"});
    
   
@@ -933,31 +933,31 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
-    .setAuthor("Random Bot About", "https://media.discordapp.net/attachments/851565209743130654/860933971977961481/image0.jpg")
-    .setThumbnail(`https://media.discordapp.net/attachments/851565209743130654/860933971977961481/image0.jpg `)
+    .setAuthor("Apple Bot About", "https://cdn.discordapp.com/attachments/839939556177739810/884322774552821820/apple-bot.png")
+    .setThumbnail(`https://cdn.discordapp.com/attachments/839939556177739810/884322774552821820/apple-bot.png `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
 
-[{Support}](https://discord.gg/YMjsqqp8Gw)
+[{Support}](https://discord.gg/u56dbrvHvh)
 
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=831212084271644733&permissions=8&scope=bot)
+[{Invite}](https://discord.com/api/oauth2/authorize?client_id=878987721618628628&permissions=8&scope=bot)
 
-> <a:devv:871813217897316353> **(Owner Bot)** 
-> <a:Online:872897515165466764> <@!792754963759235074>
+>  **(Owner Bot)** 
+> <@!764819423675547688>
 
-> <a:IconStatus:872908170568290365> **(Status)**
-> <:IconStatusOnline:872939264722206731> Online : Plying
+>  **(Status)**
+>  Online : Plying
 
-> <a:emoji_21:806556915798376497> **(Prefix)**
-> <a:FBBE600B13DB4F5986B4D0AF89247091:871811080148639794> ***__R__***
+>  **(Prefix)**
+>  ***__*__***
 
 
 `)
 
     //send the Message
     message.channel.send(embed)
-    message.react("<a:53EC4B02339C41BF9A83F5597463DBEB:853287599720235029>")
+    message.react("✅")
   } 
 
 //An suuport announcement for everyone but no one knows so fine ^w^
@@ -970,18 +970,18 @@ client.on(`message`, async (message) => {
     .setDescription (`
 {Links}
 
-[{Support}](https://discord.gg/YMjsqqp8Gw)
+[{Support}](https://discord.gg/7avNw8VW9Z)
 -
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=831212084271644733&permissions=8&scope=bot)`)
+[{Invite}](https://discord.com/api/oauth2/authorize?client_id=878987721618628628&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(`https://media.discordapp.net/attachments/851565209743130654/860938919759446056/image0.gif`)
-    .setTitle(`**{Support  Random Bot}**`) 
-    .setThumbnail(`https://media.discordapp.net/attachments/851565209743130654/860933971977961481/image0.jpg `)
+    .setTitle(`**{Support  Apple Bot}**`) 
+    .setThumbnail(`https://cdn.discordapp.com/attachments/839939556177739810/884322774552821820/apple-bot.png `)
     .setTimestamp()
     
     //send the Message
     message.channel.send(embed)
-    message.react("<:emoji_4:822203026776391711>")
+    message.react("✅")
   }
 
   //An embed announcement for everyone but no one knows so fine ^w^
@@ -1066,7 +1066,7 @@ if(message.content.startsWith("Rslots")) {
 
 
 
-const bawan = ["792754963759235074"] //id xot dane
+const bawan = ["764819423675547688"] //id xot dane
  
 const bawanprefix = "R";
 client.on('message', message => {
