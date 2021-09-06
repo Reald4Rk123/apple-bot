@@ -21,16 +21,16 @@ module.exports = {
 <a:discord:878693769619324938> **User Commands**
 **__invite - support- about - ping - prefix - uptime - tinvites - sug - roleuser - report__**
 
-**|** **Music Commands**
+<a:music:871813008471507004> **Music Commands**
 **__play - skip - skipto - stop - volume  nowplaying - shuffle - search  - loop - lyrics -radio__**
 
-<a:emoji22:864935832316805120> **Gif Commands**
+ <a:emoji22:864935832316805120> **Gif Commands**
 **__boy - girl - couple - sad - cartoon - anime - neon__**
 
-**|** **Moderation Commands**
+ <a:Moderation:813404135181385759> **Moderation Commands**
 **__ban - unban - setnick - roleadd - roleremove - vkick - setprefix - clear - close - open - senddm__**
 
-**|** **Game Commands**
+ <a:game:817425780992114708> **Game Commands**
 **__kiss - slap - hug - slots__**
 
  <a:link:864935879603781633> **Links**
