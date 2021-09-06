@@ -18,19 +18,19 @@ module.exports = {
     .setThumbnail(`https://cdn.discordapp.com/attachments/839939556177739810/884322774552821820/apple-bot.png `)
     .setTitle(`**Apple Bot**`)
     .setDescription(`
-<a:discord:878693769619324938> **User Commands**
+**|** **User Commands**
 **__invite - support- about - ping - prefix - uptime - tinvites - sug - roleuser - report__**
 
-<a:music:871813008471507004> **Music Commands**
+**|** **Music Commands**
 **__play - skip - skipto - stop - volume  nowplaying - shuffle - search  - loop - lyrics -radio__**
 
- <a:emoji22:864935832316805120> **Gif Commands**
+ **|** **Gif Commands**
 **__boy - girl - couple - sad - cartoon - anime - neon__**
 
- <a:Moderation:813404135181385759> **Moderation Commands**
+ **|** **Moderation Commands**
 **__ban - unban - setnick - roleadd - roleremove - vkick - setprefix - clear - close - open - senddm__**
 
- <a:game:817425780992114708> **Game Commands**
+ **|** **Game Commands**
 **__kiss - slap - hug - slots__**
 
  <a:link:864935879603781633> **Links**
