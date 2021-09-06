@@ -21,7 +21,7 @@ module.exports = {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
       const endembed = new MessageEmbed().setColor("RANDOM")
-        .setAuthor(`Music Queue ended.`, "https://media.discordapp.net/attachments/857029431030054993/859771060648280104/image0.jpg")
+        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/attachments/839939556177739810/884322774552821820/apple-bot.png")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
@@ -128,7 +128,7 @@ module.exports = {
     }
     
   let thumb;
-    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
+    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/860460279555817532/881576569120915476/image2-1-1.jpg";
     else thumb = song.thumbnail.url;
 
     try {
@@ -137,7 +137,7 @@ module.exports = {
         .setURL(song.url)
         .setColor("RANDOM")
         .setImage(thumb)
-        .setThumbnail(`https://media.discordapp.net/attachments/857029431030054993/859771060648280104/image0.jpg `)
+        .setThumbnail(`https://cdn.discordapp.com/attachments/839939556177739810/884322774552821820/apple-bot.png `)
          .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("⏱ Length:", `\`${song.duration} Minutes\``, true)
         .addField("📣 Volume:", `\`100\``, true)
@@ -176,7 +176,7 @@ module.exports = {
         let ms = (Number(minutes)*60+Number(seconds));   
         //get thumbnail
         let thumb;
-        if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
+        if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/860460279555817532/881576569120915476/image2-1-1.jpg";
         else thumb = song.thumbnail.url;
         //define current time
         const seek = (queue.connection.dispatcher.streamTime - queue.connection.dispatcher.pausedTime) / 1000;
@@ -247,7 +247,7 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.songs = [];
-          const stopembed = new MessageEmbed().setColor("RANDOM").setAuthor(`${user.username} stopped the music!`, "https://media.discordapp.net/attachments/857029431030054993/859771060648280104/image0.jpg")
+          const stopembed = new MessageEmbed().setColor("RANDOM").setAuthor(`${user.username} stopped the music!`, "https://cdn.discordapp.com/attachments/839939556177739810/884322774552821820/apple-bot.png")
           queue.textChannel.send(stopembed).catch(console.error);
           try {
             queue.connection.dispatcher.end();
