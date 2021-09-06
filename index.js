@@ -947,7 +947,7 @@ client.on(`message`, async (message) => {
 > <@!764819423675547688>
 
 >  **(Status)**
->  Online : Plying
+>  Onlin
 
 >  **(Prefix)**
 >  ** * **
