@@ -36,8 +36,6 @@ module.exports = {
  <a:link:864935879603781633> **Links**
  [Support](https://discord.gg/u56dbrvHvh)
  [invite](https://discord.com/api/oauth2/authorize?client_id=878987721618628628&permissions=8&scope=bot)
- [Website](coming soon)
- [vote](soon)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
