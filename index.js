@@ -284,11 +284,11 @@ let Ban = message.mentions.members.first();
 
 let hokar = args.slice(1).join(" "); 
 
-if(!args[0]) return message.channel.send('tkaya kasek mention bka bo ban krdn') 
+if(!args[0]) return message.channel.send('pls mention member to ban') 
 
-if(!Ban) return message.channel.send(`${args[0]} am kasa bwny niya la server`) 
+if(!Ban) return message.channel.send(`${args[0]} This Member Is Not In This Server`) 
 
-if(!hokar) return message.channel.send('hokarek dyare bka') 
+if(!hokar) return message.channel.send('Select Reason') 
 
  
 
@@ -314,9 +314,9 @@ const embed = new Discord.MessageEmbed()
 
 .addField('kase ban kraw', Ban) 
 
-.addField('ban kra la layan', message.author) 
+.addField('Ban Was done By', message.author) 
 
-.addField('ba hokare', hokar) 
+.addField('in a way', hokar) 
 
 .setFooter('') 
 
@@ -490,7 +490,7 @@ client.on('message', async message=>{
   if(message.content.startsWith(PREFIX +'unban')){
 if(!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send('bbura to natwane am frmana anjam bdait')
     let args = message.content.split(" ").slice(1)
-if(!args[0]) return message.channel.send('tkaya kasek mention bka bo unban krdn')
+if(!args[0]) return message.channel.send('pls mention member to unban')
 const reason = args[1] || "be hokar"
 let unban = await client.users.fetch(args[0])
  
@@ -498,11 +498,11 @@ message.guild.members.unban(unban,reason)
 const qala = new Discord.MessageEmbed()
  
   .setTitle('unBan')  
-    .addField('kase unban kraw ',unban)
+    .addField('Someonehas been unbaned',unban)
  
-.addField('un ban kra la layan',message.author)
+.addField('Unban was by ',message.author)
  
-.addField('ba hokare',reason)
+.addField('in a way',reason)
 .setFooter('')
 message.channel.send(qala)
  
@@ -950,7 +950,7 @@ client.on(`message`, async (message) => {
 >  Online : Plying
 
 >  **(Prefix)**
->  ***__*__***
+>  ** * **
 
 
 `)
