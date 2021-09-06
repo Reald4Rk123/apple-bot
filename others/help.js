@@ -18,13 +18,13 @@ module.exports = {
     .setThumbnail(`https://cdn.discordapp.com/attachments/839939556177739810/884322774552821820/apple-bot.png `)
     .setTitle(`**Apple Bot**`)
     .setDescription(`
-**|** **User Commands**
+<a:discord:878693769619324938> **User Commands**
 **__invite - support- about - ping - prefix - uptime - tinvites - sug - roleuser - report__**
 
 **|** **Music Commands**
 **__play - skip - skipto - stop - volume  nowplaying - shuffle - search  - loop - lyrics -radio__**
 
-**|** **Gif Commands**
+<a:emoji22:864935832316805120> **Gif Commands**
 **__boy - girl - couple - sad - cartoon - anime - neon__**
 
 **|** **Moderation Commands**
@@ -35,8 +35,9 @@ module.exports = {
 
  <a:link:864935879603781633> **Links**
  [Support](https://discord.gg/u56dbrvHvh)
- [Invite](https://discord.com/api/oauth2/authorize?client_id=878987721618628628&permissions=8&scope=bot)
+ [invite](https://discord.com/api/oauth2/authorize?client_id=878987721618628628&permissions=8&scope=bot)
  [Website](coming soon)
+ [vote](soon)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
