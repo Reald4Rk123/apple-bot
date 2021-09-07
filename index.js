@@ -974,7 +974,7 @@ client.on(`message`, async (message) => {
 -
 [{Invite}](https://discord.com/api/oauth2/authorize?client_id=878987721618628628&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setImage(`https://media.discordapp.net/attachments/851565209743130654/860938919759446056/image0.gif`)
+    .setImage(`https://cdn.discordapp.com/attachments/839939556177739810/884775893925494854/apple-bot.gif`)
     .setTitle(`**{Support  Apple Bot}**`) 
     .setThumbnail(`https://cdn.discordapp.com/attachments/839939556177739810/884322774552821820/apple-bot.png `)
     .setTimestamp()
